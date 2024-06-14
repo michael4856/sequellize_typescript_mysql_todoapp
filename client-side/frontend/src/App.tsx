@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import TodoList from './pages/TodoList';
 import AddTodo from './pages/AddTodo';
 import './App.css';
+import Register from './pages/register';
+import Login from './pages/login';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
               <li>
                 <Link to="/add-todo">Add Todo</Link>
               </li>
+              <li>
+                <Link to="/signup">Sign Up</Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -29,6 +34,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/todos" element={<TodoList />} />
             <Route path="/add-todo" element={<AddTodo />} />
+            <Route path="/signup" element={<Register />} />
+            <Route path="/signin" element={<Login />} />
           </Routes>
         </div>
       </div>
